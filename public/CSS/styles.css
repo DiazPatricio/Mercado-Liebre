@@ -1,0 +1,606 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+header {
+    background-color: #EAC926;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    font-size: 12px;
+    width:100%;
+    margin: 0%;  
+}
+
+.principal{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+#logo {
+    margin: 25px;
+    width: 50%;
+}
+
+#buscar{
+    padding: 5px;
+    margin: 25;
+    width: 50%;
+    height: 100%;
+    color: #03264C;
+    text-align: center;    
+}
+
+#buscar input{ 
+    background-color: white;
+    width: 9rem;
+    height: 3px;
+    line-height: 40px;
+    border-radius: 8px;
+}
+
+#buscar button{
+    background-color:white;
+    border-radius: 4px;
+    padding: 5px;
+    margin-left: -28px;
+}
+
+#pagar{
+    padding: 5px 5px;
+    margin: 10px 0px 10px 0px;
+    height: 3px;
+   
+}
+
+#pagar a h3{
+    color: #03264C;
+    text-align: center;
+}
+
+.opciones {
+    text-align: center;
+}
+
+#opciones1 , #opciones2{
+    display: none;
+}
+
+
+.burger-menu{
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    background-color: #1259c3;
+    color: white;
+    font-size: 25px;
+    width: 50px;
+    height: 40px;
+    border-radius: 8px;
+    
+}
+ 
+
+#banner {
+    margin: 0;
+    padding: 0;
+}
+
+#banner img {
+    width: 100%;
+}
+
+
+/* main*/
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-position: right;
+    text-align: center;
+    font-family: 'Roboto';
+    margin-top: -5px;
+    margin-bottom: 30px;
+    background-color: #ebebeb;
+    padding: 10px;
+}
+
+.producto{
+    text-align: center;
+    display: inline-block;
+    background-color:white;
+    border: #ebebeb solid 1px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.descripcion{  
+    padding: 15px;
+    border-top: #ebebeb solid 1px;
+    display: flex;
+    position: relative;
+    flex-flow:  row wrap;
+    justify-content: center;
+ } 
+
+.camionenvio {
+    text-align: right;
+    color: #39b54a;
+    display: block;
+    border: #39b54a solid 1px;
+    background-color: #FFF;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15px;
+    right: 20px;
+   
+}
+
+.producto img{
+    width: 90%;
+}
+
+#visita, #oferta{   
+    padding: 8px;
+    color: #666;    
+    text-align: center;
+    font-size: 24px;
+}
+
+.precio{
+    color: black;
+    font-size: 18px;
+    flex-flow: row wrap;
+    width: 30%;
+    justify-content: flex-start;
+}
+
+.descuento {
+    color: #39b54a;
+    font-size: 18px;
+    flex-flow: row wrap;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.nombreproducto{
+    display: none;
+}
+
+.detalleproducto{
+    display: none;
+}
+
+
+
+
+
+/*footer*/
+
+footer {
+    background-color: white;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#credito{
+    color: #1259c3;
+    font-size: 0.8cm;
+   
+
+}
+
+#envio{
+    color: #1259c3;
+    font-size: 0.8cm;
+    
+
+}
+
+#seguridad{
+    color: #1259c3;
+    font-size: 0.8cm;
+    
+}
+
+footer .pagotarjeta{
+    margin-bottom: 10px;
+    color: #666;
+}
+
+footer .enviogratis{
+    margin-bottom: 10px;
+    color: #666;
+}
+
+footer .protegido{
+    margin-bottom: 10px;
+    color: #666;
+}
+
+footer p{
+    color: #666; 
+    margin-top: 1px; 
+    font-size: 12px;
+}
+
+#derechosautor{
+    margin-top: 50px; 
+}
+
+
+
+
+
+/*tablet*/
+@media screen and (min-width: 620px){ 
+
+    .opciones {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; 
+    }
+
+   #burger-menu{
+        display: none;
+    }
+
+    #opciones1 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        font-size: 14px;
+    }
+
+    #opciones1 a{
+        padding: 15px;
+    }
+
+    #opciones2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        font-size: 14px;  
+    }
+
+    #opciones2 a{
+        padding: 15px;
+    }
+
+    #logo, #buscar{
+    justify-content: space-around;
+    width: 30%;
+    }
+
+    #buscar input{ 
+        width: 10rem;
+        height: 1.5rem;
+    }
+
+    #buscar button{
+        border-radius: 3px;
+        padding: 3px;
+        margin: -28px;
+        background-color: white;
+    }
+        
+    #pagar{
+        padding: 5px;
+        margin: 20px 1px 10px 1px;
+        width: 38%;
+        font-size: 12.5px;
+    }
+
+    .producto {
+        width: 40%;
+        margin: 15px;
+        text-align: center;
+        
+    }
+
+    .detalleproducto{
+        display: none;
+        flex-wrap: wrap;
+        margin: 5px;
+        font-size: 16px;
+    }
+
+    .nombreproducto{
+        display: none;
+        flex-basis: 100%;
+        justify-content: flex-start;
+        padding: 10px;
+        
+    }
+
+}
+
+/*desktop*/
+@media screen and (min-width: 1000px){
+    
+    
+    .opciones {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between; 
+    }
+    
+    #burger-menu{
+        display: none;
+    }
+    
+    #opciones1 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        font-size: 14px;
+        
+           
+    }
+    
+    #opciones1 a{
+        padding: 15px;
+    }
+    
+    #opciones2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        font-size: 14px;
+        
+    }
+
+     #opciones2 a{
+         padding: 15px;
+     }
+    
+    #logo, #buscar, #pagar{
+    justify-content: space-around;
+    width: 33%;
+    }
+
+    #buscar input{ 
+        width: 18rem;
+        height: 1.5rem;
+    }
+
+    #buscar button{
+        border-radius: 3px;
+        padding: 3px;
+        margin: -28px;
+        background-color: white;
+    }
+        
+    #pagar{
+        margin: 20px 0px 10px 0px;
+    }
+
+    .producto {
+        width: 20%;
+        margin: 12px;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .detalleproducto{
+        display: none;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .nombreproducto{
+        display: none;
+        flex-basis: 100%;
+        justify-content: flex-start;
+       
+    }
+    #pie { 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    #pie article{
+        padding: 3px 30px;
+        width: 33%;
+    }
+
+    #pie p{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+
+}
+
+
+
+
+.login{
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    padding: 20px 1px 20px 1px;
+    background-color: #cacaca;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+
+.nombreusuario input, .contraseña input{
+    width: 50vw; 
+    height: 3px;
+    border-radius: 4px;
+}
+
+.login div{
+    padding: 20px;
+}
+
+.boton button {
+    background-color: #1259c3;
+    color: white;
+    width: 50vw;
+    height: 2rem;
+    border-radius: 4px;
+    
+}
+
+
+/*register*/
+
+
+.registro{
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+    padding: 20px 1px 20px 1px;
+    background-color: #cacaca;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;}
+
+.registro .formularioregistro{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.registrate{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    color: #666;
+    padding: 2px;
+    padding-bottom: 15px;
+}
+
+.formulariorioregistro {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+}
+
+.registro div input  {    
+    width: 80%;
+    border-radius: 4px;
+}
+
+.ingreso{
+    height: 3.5vh;
+    margin-bottom: 11px;
+    padding: 8px;
+}
+.registrate{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.fotoperfil{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.fotoperfil input{
+    max-width: 5.5rem;
+    justify-content: center;
+    margin: 10px;
+    padding-bottom: 10px;
+}
+
+#comprador, #vendedor{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding:5px 30px;
+    align-items: center;
+    align-content: center;
+}
+
+.perfil p{
+    display: flex;
+    flex-flow: column wrap;
+}
+.perfil{
+    padding-bottom:18px ;
+}
+
+.categorias p{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px 2px 5px;
+    margin: 2px 2px;
+}
+
+.categorias input{
+    display: flex;
+    justify-content: flex-start;
+    padding: 2px;
+}
+
+.botonenviar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botonenviar a{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+
+}
+
+.botonenviar a button{ 
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #1259c3;
+    color: white;
+    width: 20vw;
+    height: 2rem;
+    border-radius: 4px;
+    width: 70%;
+    margin: 10px 4vw;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
